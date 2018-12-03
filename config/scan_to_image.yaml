@@ -1,0 +1,13 @@
+target_frame_id: "velodyne_static"
+width: 450
+height: 252
+# Parameters for spherical projection (in rad)
+y_angular_resolution: 0.01
+x_angle_offset: 1.57079632679
+y_angle_offset: 5.02138630718 
+x_angle_range: 3.14159265359
+# Neural net
+model_prototxt: "/ros/src/semantic_segmentation_walker/nets/deploy.prototxt"
+weights_caffemodel: "/ros/src/semantic_segmentation_walker/nets/train_iter_390000.caffemodel"
+use_gpu: true
+num_classes: 6

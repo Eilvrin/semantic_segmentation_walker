@@ -1,0 +1,12 @@
+<!-- -*- mode: XML -*- -->
+
+<launch>
+
+<node pkg="tf" type="static_transform_publisher" name="static_transform_publisher" output="screen" args="0 0 0.116 0 0 0 1 base velodyne_static 1000"></node>
+
+<node type="semantic_seg_node" pkg="semantic_segmentation" name="semantic_seg_node" output="screen" >
+  <rosparam file="$(find semantic_segmentation)/config/scan_to_image.yaml" command="load"/>
+  <remap from="assembled_cloud" to="/velodyne/points/last/roi/tf/with_normals/assembled" />
+</node>
+
+</launch>
