@@ -1,7 +1,10 @@
-# Semantic segmentation readme
+# Semantic segmentation
 
 ### Overview
 This ROS package contains the implementation of MultiNet which can be run directly on the walker.
+
+![youtubevideo](https://github.com/Eilvrin/semantic_segmentation_walker/blob/master/semantic_segmentation_point_clouds.png)
+[See on youtube](https://www.youtube.com/embed/2lej5Ka1Rvw)
 
 ### Caffe installation
 
